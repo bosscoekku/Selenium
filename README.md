@@ -10,6 +10,7 @@ Firefox:	https://github.com/mozilla/geckodriver/releases
 Safari:	https://webkit.org/blog/6900/webdriver-support-in-safari-10/
 
 3. เมื่อแตกไฟล์ driver เสร็จแล้วจะได้ตามรูป
+
 [![](https://i.imgur.com/jXEhjHO.png)](https://i.imgur.com/jXEhjHO.png)
 
 4. สร้างไฟล์ python ชื่อ app.py
