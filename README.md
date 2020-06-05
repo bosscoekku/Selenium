@@ -31,28 +31,28 @@ Safari:	https://webkit.org/blog/6900/webdriver-support-in-safari-10/
 ```
 code app.py
 ```python
-from selenium import webdriver # Import package
+from selenium import webdriver             # Import package
 driver = webdriver.Chrome('chromedriver')  # Call Driver
-driver.get("https://www.google.com/") # Get url: www.gooogle.com
-print (driver.title) # Print title is : Google
+driver.get("https://www.google.com/")      # Get url: www.gooogle.com
+print (driver.title)                       # Print title is : Google
 ```
 output app.py
 [![app.py](https://i.imgur.com/eZR7GuP.png "app.py")](https://i.imgur.com/eZR7GuP.png "app.py")
 5. ต่อไปเราจะให้ selenium ช่วยกรอกข้อมูลในช่องค้นหาให้
 
 	**หลักการง่ายๆคือ**
-		 หาตำแหน่งที่ต้องการจะคีย์ข้อมูลลงไป
-		 ใส่ข้อความเข้าไป
+		 1.หาตำแหน่งที่ต้องการจะคีย์ข้อมูลลงไป
+		 2.ใส่ข้อความเข้าไป
 [![](https://i.imgur.com/EBRahBs.png)](https://i.imgur.com/EBRahBs.png)
 ```python
-from selenium import webdriver # Import package
+from selenium import webdriver             # Import package
 driver = webdriver.Chrome('chromedriver')  # Call Driver
-driver.get("https://www.google.com/") # Get url: www.gooogle.com
-print (driver.title) # Print title is : Google
+driver.get("https://www.google.com/")      # Get url: www.gooogle.com
+print (driver.title)                       # Print title is : Google
 
- search = driver.find_element_by_name('q') # Seach element name "q"
- search.clear()                                                # Clear
- search.send_keys("selenium")                      # Insert string with send_keys()
+search = driver.find_element_by_name('q') # Seach element name "q"
+search.clear()                            # Clear
+search.send_keys("selenium")              # Insert string with send_keys()
 ```
 [![](https://i.imgur.com/gpDWzZL.gif)](https://i.imgur.com/gpDWzZL.gif)
 
@@ -60,15 +60,15 @@ print (driver.title) # Print title is : Google
 ถ้าต้องการให้คลิกปุ่มค้นหาด้วย เพิ่มโค้ดอีกนิดหน่อย
 
 ```python
-from selenium import webdriver # Import package
+from selenium import webdriver             # Import package
 driver = webdriver.Chrome('chromedriver')  # Call Driver
-driver.get("https://www.google.com/") # Get url: www.gooogle.com
-print (driver.title) # Print title is : Google
+driver.get("https://www.google.com/")      # Get url: www.gooogle.com
+print (driver.title)                       # Print title is : Google
 
- search = driver.find_element_by_name('q') # Seach element name "q"
- search.clear()                                                # Clear
- search.send_keys("selenium")                      # Insert string with send_keys()
- search.send_keys(Keys.RETURN)                  # Keys.RETURN is Special Keys
+search = driver.find_element_by_name('q') # Seach element name "q"
+search.clear()                            # Clear
+search.send_keys("selenium")              # Insert string with send_keys()
+search.send_keys(Keys.RETURN)             # Keys.RETURN is Special Keys
 ```
 [![](https://i.imgur.com/EGZjMSH.gif)](https://i.imgur.com/EGZjMSH.gif)
 
